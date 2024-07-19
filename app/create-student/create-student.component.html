@@ -1,0 +1,25 @@
+<div class="row">
+<div class="col-md-4 offset-md-4">
+<h3> Create Student </h3>
+<form (ngSubmit)="onSubmit()">
+    <div class="row">
+    <div class="form-group">
+        <label> First Name</label>
+        <input type="text" class="form-control" required id="firstName"  
+        [(ngModel)] = "student.firstName" name="firstName" >
+        
+
+    </div>
+    <div class="form-group">
+        <label> Last Name</label>
+        <input type="text" class="form-control" required id="lastName" 
+        [(ngModel)] = "student.lastName" name="lastName">
+        
+    </div>
+</div>
+<div class="col order-last">
+    <button class="btn btn-success" type="submit">Submit</button>
+</div>
+</form>
+</div>
+</div>
